@@ -94,6 +94,19 @@
             gap: 32px;
         }
 
+        /* Two column layout for scenarios with 4 items */
+        .two-column-layout .sub-scenarios {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .two-column-layout .sub-scenarios {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .sub-scenario {
             text-align: center;
         }
@@ -390,7 +403,7 @@
         <div class="container">
             <section class="scenarios">
                 <!-- Scenario 1: KIMI with Icon -->
-                <div class="scenario" id="kimi-with-icon">
+                <div class="scenario two-column-layout" id="kimi-with-icon">
                     <h3>KIMI With Icon</h3>
                     <p>The primary KIMI logo combines our wordmark with the iconic symbol for maximum impact and recognition.</p>
 
@@ -416,6 +429,32 @@
                                     <div class="download-overlay">
                                         <button class="download-btn" onclick="downloadLogo('01-kimi-with-icon/kimi-with-icon-dark', 'svg')">Download SVG</button>
                                         <button class="download-btn" onclick="downloadLogo('01-kimi-with-icon/kimi-with-icon-dark', 'png')">Download PNG</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-scenario">
+                            <h4>Light Background (Solid)</h4>
+                            <div class="demo-area light-bg">
+                                <div class="logo-container">
+                                    <img src="scenarios/01-kimi-with-icon/kimi-with-icon-light-solid.svg" alt="KIMI with Icon on Light Background (Solid)" class="logo-main">
+                                    <div class="download-overlay">
+                                        <button class="download-btn" onclick="downloadLogo('01-kimi-with-icon/kimi-with-icon-light-solid', 'svg')">Download SVG</button>
+                                        <button class="download-btn" onclick="downloadLogo('01-kimi-with-icon/kimi-with-icon-light-solid', 'png')">Download PNG</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-scenario">
+                            <h4>Dark Background (Solid)</h4>
+                            <div class="demo-area dark-bg">
+                                <div class="logo-container">
+                                    <img src="scenarios/01-kimi-with-icon/kimi-with-icon-dark-solid.svg" alt="KIMI with Icon on Dark Background (Solid)" class="logo-inverted">
+                                    <div class="download-overlay">
+                                        <button class="download-btn" onclick="downloadLogo('01-kimi-with-icon/kimi-with-icon-dark-solid', 'svg')">Download SVG</button>
+                                        <button class="download-btn" onclick="downloadLogo('01-kimi-with-icon/kimi-with-icon-dark-solid', 'png')">Download PNG</button>
                                     </div>
                                 </div>
                             </div>
